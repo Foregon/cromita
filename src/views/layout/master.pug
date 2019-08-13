@@ -1,0 +1,39 @@
+doctype
+html(lang="pt-br")
+  head
+    meta(charset="utf-8")
+    meta(name="country", content="BRA")
+    meta(name="language", content="pt-BR")
+    meta(name="theme-color", content="#FFFFFF")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    meta(name="msapplication-TileColor", content="#FFFFFF")
+    meta(name="description" content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    title Cromita Project
+
+    //- DNS prefetch
+    //- https://developer.mozilla.org/en-US/docs/Learn/Performance/dns-prefetch
+    link(rel="dns-prefetch" href="https://w2.yotpo.com")
+    link(rel="dns-prefetch" href="https://st.getsitecontrol.com")
+    link(rel="dns-prefetch" href="https://www.googletagmanager.com")
+    link(rel="dns-prefetch" href="https://widgets.getsitecontrol.com")
+
+    block head
+
+    //-  CSS Asynchronously
+    //- https://www.filamentgroup.com/lab/load-css-simpler/
+    style.
+      .body {}
+
+    link(
+      media="print"
+      rel="stylesheet"
+      href="css/style.css"
+      onload="this.media='all'"
+    )
+
+    block script
+
+  body
+    block content
