@@ -1,0 +1,17 @@
+# Dependency directory
+node_modules
+bower_components
+.cache
+v8-compile-cache-0
+v8-compile
+.env
+.env.example
+.gitattribute
+.editorconfig
+.eslintrc.json
+.eslintignore
+.stylelintrc.json
+.anylint
+.babelrc
+.directory
+package-lock.json

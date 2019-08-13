@@ -1,0 +1,43 @@
+{
+  "name": "cromita",
+  "version": "1.0.0",
+  "description": "The cromita project",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "watch": "webpack --watch --progress --colors"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "prettier": "^1.17.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.2.0",
+    "stylelint": "^10.1.0",
+    "stylelint-a11y": "^1.2.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-high-performance-animation": "^1.2.1",
+    "stylelint-order": "^3.0.0",
+    "stylelint-prettier": "^1.1.1",
+    "stylelint-scss": "^3.8.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
