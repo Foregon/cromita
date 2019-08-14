@@ -8,11 +8,8 @@ v8-compile
 .env.example
 .gitattribute
 .editorconfig
-.eslintrc.json
 .eslintignore
-.stylelintrc.json
 .anylint
-.babelrc
 .directory
 public
 package-lock.json

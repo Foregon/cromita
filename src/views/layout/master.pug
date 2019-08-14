@@ -21,12 +21,14 @@ html(lang="pt-br")
 
     block head
 
+
     //-  CSS Asynchronously
     //- https://www.filamentgroup.com/lab/load-css-simpler/
     link(
-      media="all"
+      media="print"
       rel="stylesheet"
       href="css/style.css"
+      onload="this.media = all"
     )
 
     block script

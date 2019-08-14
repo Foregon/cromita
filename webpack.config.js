@@ -16,9 +16,9 @@ module.exports = {
 
   performance: {
     maxAssetSize: 100000,
-    maxEntrypointSize: 100000,
+    maxEntrypointSize: 1000,
     hints: 'warning',
-  }, // https://webpack.js.org/configuration/performance/
+  },
 
   devServer: {
     hot: true,
@@ -33,9 +33,9 @@ module.exports = {
   },
 
   output: {
+    publicPath: '/static/',
     path: path.resolve(__dirname, './public/static/'),
     filename: 'js/[name].js',
-    publicPath: '/static/',
   },
 
   module: {
