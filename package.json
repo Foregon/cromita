@@ -23,6 +23,7 @@
       "maxSize": "10 kB"
     }
   ],
+
   "husky": {
     "hooks": {
       "pre-commit": "eslint . --fix",
