@@ -15,8 +15,8 @@ module.exports = {
   devtool: 'source-map',
 
   performance: {
-    maxAssetSize: 1000000,
-    maxEntrypointSize: 1000000,
+    maxAssetSize: 100000,
+    maxEntrypointSize: 100000,
     hints: 'warning',
   }, // https://webpack.js.org/configuration/performance/
 
@@ -26,7 +26,7 @@ module.exports = {
     watchContentBase: true,
     contentBase: [path.join(__dirname, 'public/static')],
     compress: true,
-    port: 9000
+    port: 9000,
   },
 
   entry: {
@@ -70,7 +70,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: `${BASE_URL}/views/index.pug`,
-      excludeAssets: [/main.*.js/, /style.*.css/]
+      excludeAssets: [/main.*.js/, /style.*.css/],
     }),
 
     new HtmlWebpackExcludeAssetsPlugin(),
@@ -88,9 +88,9 @@ module.exports = {
     }),
 
     new BundleAnalyzerPlugin({
-      analyzerMode: 'server',
+      analyzerMode: 'static',
     }),
-
+    
     new Critters(),
   ],
 
