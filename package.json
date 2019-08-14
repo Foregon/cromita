@@ -3,10 +3,31 @@
   "version": "1.0.0",
   "description": "The cromita project",
   "scripts": {
+    "eslint": "eslint . --fix",
+    "bundlesize": "bundlesize",
     "build": "webpack --progress --colors",
     "watch": "webpack --watch --progress --colors"
   },
-  "dependencies": {},
+  "dependencies": {
+    "husky": "^3.0.3",
+    "webpack-bundle-analyzer": "^3.4.1"
+  },
+  "bundlesize": [
+    {
+      "path": "./public/static/css/style.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./public/static/js/main.js",
+      "maxSize": "10 kB"
+    }
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint . --fix",
+      "pre-push": "bundlesize"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -15,19 +36,21 @@
     "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
+    "bundlesize": "^0.18.0",
+    "critters-webpack-plugin": "^2.4.0",
+    "css-loader": "^3.2.0",
     "eslint": "^5.16.0",
-    "prettier": "^1.17.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^5.0.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-prettier": "^3.1.0",
-    "css-loader": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.17.0",
     "sass-loader": "^7.2.0",
     "stylelint": "^10.1.0",
     "stylelint-a11y": "^1.2.0",
