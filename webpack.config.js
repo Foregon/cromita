@@ -22,7 +22,6 @@ module.exports = {
 
   devServer: {
     hot: true,
-    writeToDisk: true,
     watchContentBase: true,
     contentBase: [path.join(__dirname, 'public/static')],
     compress: true,
@@ -90,7 +89,7 @@ module.exports = {
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
     }),
-    
+
     new Critters(),
   ],
 
